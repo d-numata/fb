@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 #  get 'top/index'
 
- get 'contacts' => 'contacts#index'
+# get 'contacts' => 'contacts#index'
+ get 'contacts' => 'contacts#new'
  get 'blogs' => 'blogs#index'
 #  get 'contacts/index'
 
