@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+  devise_for :users
 #  get 'top/index'
 
 # get 'contacts' => 'contacts#index'
- get 'contacts' => 'contacts#new'
+# get 'contacts' => 'contacts#new'
  get 'blogs' => 'blogs#index'
 #  get 'contacts/index'
 
@@ -17,7 +18,11 @@ resources :contacts, only: [:new, :create] do
     post :confirm
   end
 end
-
+#resources :tweets, only: [:new, :create, :edit, :update, :destroy] do
+#  collection do
+#    post :confirm
+#  end
+#end
 root 'top#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
