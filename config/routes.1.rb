@@ -25,9 +25,6 @@ end
 #end
 root 'top#index'
 
-if Rails.env.development?
-  mount LetterOpenerWeb::Engine, at: "/letter_opener"
-end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
