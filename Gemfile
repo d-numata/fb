@@ -60,3 +60,5 @@ end
 gem 'rails_admin'
 
 gem 'cancan'
+
+gem 'activeresource' #この行を追記する

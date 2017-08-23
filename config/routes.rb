@@ -19,6 +19,7 @@ resources :contacts, only: [:new, :create] do
     post :confirm
   end
 end
+resources :poems, only: [:index, :show] #この行を追記する
 #resources :tweets, only: [:new, :create, :edit, :update, :destroy] do
 #  collection do
 #    post :confirm
