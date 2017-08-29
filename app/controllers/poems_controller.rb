@@ -4,7 +4,6 @@ class PoemsController < ApplicationController
   end
   #追加
   def show
-    @poems = Poem.find(params[:id])
-    render json: @poems
+    @poem = Poem.find(params[:id])
   end
 end
