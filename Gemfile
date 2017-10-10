@@ -55,6 +55,7 @@ gem 'faker'
 
 group :development do
   gem 'letter_opener_web'
+  gem 'dotenv-rails'
 end
 
 gem 'rails_admin'
@@ -62,3 +63,11 @@ gem 'rails_admin'
 gem 'cancan'
 
 gem 'activeresource' #この行を追記する
+
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+
+#image uploader
+gem 'carrierwave'
+gem 'mini_magick'
