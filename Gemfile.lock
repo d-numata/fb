@@ -90,6 +90,7 @@ GEM
       temple (>= 0.8.0)
       tilt
     hashie (3.5.6)
+    httpclient (2.8.0)
     i18n (0.8.6)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
@@ -174,6 +175,11 @@ GEM
     orm_adapter (0.5.0)
     pg (0.21.0)
     public_suffix (3.0.0)
+    pusher (1.1.0)
+      httpclient (~> 2.7)
+      multi_json (~> 1.0)
+      pusher-signature (~> 0.1.8)
+    pusher-signature (0.1.8)
     rack (1.6.8)
     rack-pjax (1.0.0)
       nokogiri (~> 1.5)
@@ -301,6 +307,7 @@ DEPENDENCIES
   omniauth-facebook
   omniauth-twitter
   pg
+  pusher
   rails (= 4.2.3)
   rails_12factor
   rails_admin
