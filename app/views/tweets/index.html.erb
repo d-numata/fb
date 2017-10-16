@@ -1,8 +1,8 @@
 <div class="container">
   <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
     <p><%= notice %></p>
-    <h1>Tweet一覧</h1>
-      <%= link_to "tweetを作成する", new_tweet_path, class: 'btn btn-default' %>
+    <h1>Insta一覧</h1>
+      <%= link_to "instaを作成する", new_tweet_path, class: 'btn btn-default' %>
     <% @tweets.each do |tweet| %>
     <div class="row">
       <p><%= tweet.content %></p>
