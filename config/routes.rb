@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+#  get 'comments/create'
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users, controllers: {
     registrations: "users/registrations",
@@ -20,7 +22,6 @@ resources :blogs do
   resources :comments
     post :confirm, on: :collection
   end
-end
 
 # 
 #resources :blogs do
