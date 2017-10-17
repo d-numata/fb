@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'relationships/create'
+
+  get 'relationships/destroy'
+
+#  get 'users/index'
+
 #  get 'comments/create'
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
@@ -18,6 +24,10 @@ Rails.application.routes.draw do
 #  collection do
 #    post :confirm
 #  end
+
+resources :relationships, only: [:create, :destroy]
+
+resources :users, only: [:index]
 
 resources :blogs do
   resources :comments
