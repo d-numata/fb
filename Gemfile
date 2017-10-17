@@ -46,5 +46,7 @@ end
 gem 'twitter-bootstrap-rails'
 gem 'jquery-turbolinks'
 
-gem 'device'
+gem 'devise'
 gem 'therubyracer'
+
+gem 'faker'

@@ -1,4 +1,5 @@
 class TweetsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_tweet, only: [:edit, :update, :destroy]
 
   def index
@@ -21,6 +22,8 @@ class TweetsController < ApplicationController
 
   def create
     @tweet = Tweet.new(tweets_params)
+    # user_idを代入する
+    @tweet.user_id = current_user.id
     if @tweet.save
       # 一覧画面へ遷移して"tweetを作成しました！"とメッセージを表示します。
       redirect_to tweets_path, notice: "tweetを作成しました！"

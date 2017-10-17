@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
 # 以下の1行を削除する
 #get 'top/index'
 
