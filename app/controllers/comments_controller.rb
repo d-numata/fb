@@ -32,6 +32,7 @@ class CommentsController < ApplicationController
       else
         format.html { render :new }
       end
+    end
   end
 
   private
@@ -39,5 +40,5 @@ class CommentsController < ApplicationController
     def comment_params
       params.require(:comment).permit(:blog_id, :content)
     end
-  end
+
 end
