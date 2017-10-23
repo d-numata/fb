@@ -15,6 +15,7 @@ Rails.application.routes.draw do
 #  get 'users/index'
 
 #  get 'comments/create'
+resources :users, only: [:index]
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users, controllers: {
@@ -39,7 +40,7 @@ end
 
 resources :relationships, only: [:create, :destroy]
 
-resources :users, only: [:index]
+
 
 resources :blogs do
   resources :comments
