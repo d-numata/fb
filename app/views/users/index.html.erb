@@ -9,5 +9,6 @@
         <%= user.email %>
         <%= render 'follow_form', user: user %>
       </div>
+      <%= link_to '詳細ページへ', show_tweet_path(user.id) %>
   <% end %>
 </div>
