@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :confirmable, :omniauthable
+#  mount_uploader :avatar, AvatarUploader #deviseの設定配下に追記
   has_many :tweets
   
   def self.create_unique_string
@@ -44,5 +45,14 @@ class User < ActiveRecord::Base
       user.save
     end
     user
+  end
+  
+  def update_with_password(params, *options)
+    if provider.blank?
+      super
+    else
+      params.delete :current_password
+      update_without_password(params, *options)
+    end
   end
 end

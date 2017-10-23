@@ -225,6 +225,10 @@ img {
  * Hide the overflow in IE.
  */
 
+img{
+  max-width: 100%;
+}
+
 svg:not(:root) {
   overflow: hidden;
 }
