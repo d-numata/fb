@@ -9,7 +9,7 @@ class NoticeMailer < ApplicationMailer
   def sendmail_tweet(tweet)
     @tweet = tweet
 
-    mail to: "dnumata@nttpc.co.jp"
+    mail to: "dnumata@nttpc.co.jp",
       subject: '【Tweet】tweetが投稿されました'
   end
 end
