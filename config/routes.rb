@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   root 'top#index'
 #  get 'tweets/index'#<<<<この行を削除する
 
-  get 'tweets' => 'tweets#index' #<<<<<この行を追加する
+#  get 'tweets' => 'tweets#index' #<<<<<この行を追加する
 
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
