@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 #  get 'users/index'
 
 #  get 'comments/create'
-resources :users, only: [:index]
+resources :users, only: [:index, :show]
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users, controllers: {
