@@ -10,6 +10,8 @@
     </ul>
   </div>
 <% end %>
+<%= f.label :画像 %>
+<%= f.file_field :avatar, class: 'form-control' %>
 <%= f.label :内容 %>
 <%= f.text_field :content, class: 'form-control' %>
 <br>
