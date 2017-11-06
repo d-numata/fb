@@ -1,14 +1,18 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
-
 <div class="container">
-  <h2>ユーザー</h2>
+  <h2>ユーザー一覧</h2>
   <% @users.each do |user| %>
       <div class="container-child col-md-2 col-sm-4 col-xs-6 ">
-        <%= profile_img(user) %>
-        <%= user.email %>
-        <%= render 'follow_form', user: user %>
+        <div class="row">
+          <%= profile_img(user) %>
+        </div>
+        <div class="row">
+          <%= link_to user.name, user %>
+        </div>
+        <div class="row">
+          <%= user.email %>
+        </div>
+        <div class="row">
+          <%= render 'follow_form', user: user %>
       </div>
-      <%= link_to '詳細ページへ', blog_path(user.id) %>
   <% end %>
 </div>
