@@ -10,9 +10,20 @@
     </ul>
   </div>
 <% end %>
-<%= f.label :画像 %>
-<%= f.file_field :avatar %>
-<%= f.hidden_field :avatar_cache %>
+</div class="field">
+ <%= f.label :image %>
+ <%= f.file_field :image %>
+ <%= f.hidden_field :image_cache %>
+</div>
+<div class="field">
+    <!-- 既存レコード(DBに保存されている)かつ、画像が存在する場合 -->
+    <% if @tweet.persisted? && @tweet.image? %>
+      <label>
+        <%= f.check_box :remove_image %>
+        画像を削除
+      </label>
+    <% end %>
+</div>
 <%= f.label :内容 %>
 <%= f.text_field :content, class: 'form-control' %>
 <br>
