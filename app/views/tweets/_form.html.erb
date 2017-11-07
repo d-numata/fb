@@ -11,7 +11,8 @@
   </div>
 <% end %>
 <%= f.label :画像 %>
-<%= f.file_field :avatar, class: 'form-control' %>
+<%= f.file_field :avatar %>
+<%= f.hidden_field :avatar_cache %>
 <%= f.label :内容 %>
 <%= f.text_field :content, class: 'form-control' %>
 <br>
