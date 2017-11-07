@@ -1,19 +1,18 @@
 <div class="container">
   <h2>ユーザー一覧</h2>
+
   <% @users.each do |user| %>
     <div class="row">
-      <div class="col-xs-2 col-xs-offset-3">
+      <div class="col-md-2">
         <%= profile_img(user) %>
-      </div>
-      <div class="row">
+        </br>
         <%= link_to user.name, user %>
-      </div>
-      <div class="row">
+        </br>
         <%= user.email %>
-      </div>
-      <div class="row">
+        </br>
         <%= render 'follow_form', user: user %>
       </div>
     </div>
   <% end %>
+
 </div>
