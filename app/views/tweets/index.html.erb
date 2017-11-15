@@ -6,7 +6,7 @@
     <% @tweets.each do |tweet| %>
     <div class="row">
       <p><%= tweet.content %></p>
-      <p><%= tweet.user %></p>
+      <p><%= tweet.user.name %></p>
       
       <strong>Image:</strong>
 
