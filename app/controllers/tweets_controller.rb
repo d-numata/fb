@@ -26,7 +26,7 @@ class TweetsController < ApplicationController
     @tweet.user_id = current_user.id
     if @tweet.save
       # 一覧画面へ遷移して"tweetを作成しました！"とメッセージを表示します。
-      redirect_to tweets_path, notice: "tweetを作成しました！"
+      redirect_to tweets_path, notice: "instaを作成しました！"
       NoticeMailer.sendmail_tweet(@tweet).deliver
     else
       # 入力フォームを再描画します。
@@ -41,13 +41,13 @@ class TweetsController < ApplicationController
   def update
     @tweet = Tweet.find(params[:id])
     @tweet.update(tweets_params)
-    redirect_to tweets_path, notice: "tweetを更新しました！"
+    redirect_to tweets_path, notice: "instaを更新しました！"
   end
 
   def destroy
     @tweet = Tweet.find(params[:id])
     @tweet.destroy
-    redirect_to tweets_path, notice: "tweetを削除しました！"
+    redirect_to tweets_path, notice: "instaを削除しました！"
   end
   
   def confirm
