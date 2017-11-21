@@ -1,2 +1,11 @@
-  <%= @user.followed_users %>
-  <%= @user.followers %>
+<% @user.followed_users.each do |user| %>
+ <p><%= user.name %>
+ <%= profile_img(user)%>
+ <%= user.email %></p>
+<% end %>
+
+<% @user.followers.each do |user| %>
+ <p> <%= user.name %>
+ <%= profile_img(user)%>
+ <%= user.email %></p>
+<% end %>
