@@ -15,14 +15,16 @@ Rails.application.routes.draw do
 #  get 'users/index'
 
 #  get 'comments/create'
-resources :users, only: [:index, :show]
-#resources :users, only: [:index]
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users, controllers: {
     registrations: "users/registrations",
     omniauth_callbacks: "users/omniauth_callbacks"
   }
+
+#resources :users, only: [:index]
+resources :users, only: [:index, :show]
+
 #  get 'top/index'
 
 # get 'contacts' => 'contacts#index'
