@@ -2,12 +2,12 @@
  <p><%= user.name %>
  <%= profile_img(user)%>
  <%= user.email %></p>
- <%= user.followed_users %>
+ <%= @user.followed_users %>
 <% end %>
 
 <% @user.followers.each do |user| %>
  <p> <%= user.name %>
  <%= profile_img(user)%>
  <%= user.email %></p>
- <%= user.followers %>
+ <%= @user.followers %>
 <% end %>
