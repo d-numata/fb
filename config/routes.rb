@@ -43,8 +43,6 @@ end
 
 resources :relationships, only: [:create, :destroy]
 
-
-
 resources :blogs do
   resources :comments
     post :confirm, on: :collection

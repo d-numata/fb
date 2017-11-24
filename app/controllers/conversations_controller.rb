@@ -15,6 +15,8 @@ class ConversationsController < ApplicationController
   end
 end
 
+before_action :authenticate_user!
+
 private
   def conversation_params
     params.permit(:sender_id, :recipient_id)
