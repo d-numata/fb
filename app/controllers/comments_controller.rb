@@ -13,6 +13,14 @@ class CommentsController < ApplicationController
       else
         format.html { render :new }
       end
+
+      if @comment.save
+        # 省略
+        Pusher.trigger('test_channel', 'comment_created', {
+          message: 'あなたの作成したブログにコメントが付きました'
+        })
+      end
+
     end
   end
   
