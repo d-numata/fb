@@ -2,8 +2,9 @@
 <ul>
   <% @notifications.each do |notification| %>
   <hr>
-    <li>
-      <span><%= notification.read %></span>
+
+    <li list-style:none;>
+      <p><%= read_or %></p>
       <p>
         <%= notification.comment.user.try(:name) %>さんが
         あなたのブログ（<%= link_to "#{notification.comment.blog.title}", blog_path(notification.comment.blog, notification_id: notification.id) %>）にコメントしました。
