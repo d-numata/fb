@@ -64,4 +64,5 @@
 # set :ssh_options, keys: '鍵へのpath'
 
 server '54.65.62.69', user: 'app', roles: %w{app db web}
-set :ssh_options, keys: '/home/app/.ssh/id_rsa'
+#set :ssh_options, keys: '/home/app/.ssh/id_rsa'
+set :ssh_options, keys: '/home/ubuntu/workspace/achieve/.ssh/id_rsa'
