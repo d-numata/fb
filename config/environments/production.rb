@@ -1,5 +1,6 @@
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: 'https://thawing-bayou-56582.herokuapp.com/' }
+#  config.action_mailer.default_url_options = { host: 'https://thawing-bayou-56582.herokuapp.com/' }
+  config.action_mailer.default_url_options = { host: 'http:///13.113.53.104/' }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
