@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use postgresql as the database for Active Record
@@ -26,7 +30,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
+<<<<<<< HEAD
 gem 'unicorn'
+=======
+# gem 'unicorn'
+>>>>>>> origin/master
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -43,6 +51,12 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   
+<<<<<<< HEAD
+=======
+  gem 'pry-rails'
+  gem 'better_errors'
+  
+>>>>>>> origin/master
   gem 'capistrano', '3.6.0'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
@@ -51,12 +65,19 @@ group :development, :test do
 end
 
 gem 'twitter-bootstrap-rails'
+<<<<<<< HEAD
 
 gem 'jquery-turbolinks'
 
 gem 'rails_12factor', group: :production
 
 gem 'devise'
+=======
+gem 'jquery-turbolinks'
+
+gem 'devise'
+gem 'therubyracer'
+>>>>>>> origin/master
 
 gem 'faker'
 
@@ -69,8 +90,11 @@ gem 'rails_admin'
 
 gem 'cancan'
 
+<<<<<<< HEAD
 gem 'activeresource' #この行を追記する
 
+=======
+>>>>>>> origin/master
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
@@ -79,8 +103,15 @@ gem 'omniauth-facebook'
 gem 'carrierwave'
 gem 'mini_magick'
 
+<<<<<<< HEAD
 gem 'pusher'
 
 gem 'fog'
 
 gem 'dotenv-rails'
+=======
+gem 'fog'
+
+gem 'dotenv-rails'
+gem 'unicorn'
+>>>>>>> origin/master
