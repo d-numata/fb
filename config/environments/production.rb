@@ -79,7 +79,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
 #config.action_mailer.default_url_options = { host: 'https://thawing-bayou-56582.herokuapp.com/' }
-config.action_mailer.default_url_options = { host: 'http://54.65.62.69/' }
+#config.action_mailer.default_url_options = { host: 'http://54.65.62.69/' }
+config.action_mailer.default_url_options = { host: 'http://13.113.53.104/' }
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings =
 {
