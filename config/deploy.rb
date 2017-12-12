@@ -1,16 +1,27 @@
 lock '3.6.0'
 
 # デプロイするアプリケーション名
+<<<<<<< HEAD
 set :application, 'achieve'
 
 # cloneするgitのレポジトリ（xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
 set :repo_url, 'https://github.com/d-numata/achieve.git'
+=======
+set :application, 'fb'
+
+# cloneするgitのレポジトリ（xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
+set :repo_url, 'https://github.com/d-numata/fb.git'
+>>>>>>> origin/master
 
 # deployするブランチ。デフォルトはmasterなのでなくても可。
 set :branch, ENV['BRANCH'] || 'master'
 
 # deploy先のディレクトリ。
+<<<<<<< HEAD
 set :deploy_to, '/var/www/achieve'
+=======
+set :deploy_to, '/var/www/fb'
+>>>>>>> origin/master
 
 # シンボリックリンクをはるフォルダ・ファイル
 set :linked_files, %w{.env config/secrets.yml}

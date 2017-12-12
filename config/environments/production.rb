@@ -1,4 +1,9 @@
 Rails.application.configure do
+<<<<<<< HEAD
+=======
+#  config.action_mailer.default_url_options = { host: 'https://thawing-bayou-56582.herokuapp.com/' }
+  config.action_mailer.default_url_options = { host: 'http:///13.113.53.104/' }
+>>>>>>> origin/master
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -77,6 +82,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+<<<<<<< HEAD
 
 #config.action_mailer.default_url_options = { host: 'https://thawing-bayou-56582.herokuapp.com/' }
 #config.action_mailer.default_url_options = { host: 'http://54.65.62.69/' }
@@ -95,3 +101,18 @@ ActionMailer::Base.smtp_settings =
 
 end
 
+=======
+  
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings =
+  {
+   user_name: ENV['SENDGRID_USERNAME'],
+   password: ENV['SENDGRID_PASSWORD'],
+   domain: "heroku.com",
+   address: "smtp.sendgrid.net",
+   port: 587,
+   authentication: :plain,
+   enable_starttls_auto: true
+  }
+end
+>>>>>>> origin/master

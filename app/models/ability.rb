@@ -8,6 +8,10 @@ class Ability
       can :manage, :all           # allow superadmins to do anything
     end
     # =====ここまでを追記
+<<<<<<< HEAD
+=======
+    
+>>>>>>> origin/master
     # Define abilities for the passed in user here. For example:
     #
     #   user ||= User.new # guest user (not logged in)

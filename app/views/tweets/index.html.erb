@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
+    <p><%= notice %></p>
+    <h1>Insta一覧</h1>
+      <%= link_to "instaを作成する", new_tweet_path, class: 'btn btn-default' %>
+    <% @tweets.each do |tweet| %>
+    <div class="row">
+      <p><%= tweet.content %></p>
+      <p><%= tweet.user.name %></p>
+      
+      <strong>Image:</strong>
+
+      <% if tweet.image? %>
+        <div class="thumbnail">
+          <%= image_tag tweet.image %>
+        </div>
+      <% end %>
+      </p>
+      <%= link_to "編集", edit_tweet_path(tweet.id), class: 'btn btn-default btn-sm btn-success' %>
+      <%= link_to "削除", tweet_path(tweet.id), method: :delete, data: { confirm: '本当に削除していいですか？'}, class: 'btn btn-default btn-sm btn btn-danger' %>
+    </div>
+    <% end %>
+  </div>
+  <div id="page-top-btn" class="page-top-btn">
+    <p><a class="move-page-top" id="move-page-top">▲</a></p>
+　</div>
+</div>

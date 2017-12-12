@@ -10,6 +10,10 @@ Rails.application.configure do
   config.eager_load = false
 
   # Show full error reports and disable caching.
+<<<<<<< HEAD
+=======
+#  config.consider_all_requests_local       = true
+>>>>>>> origin/master
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
