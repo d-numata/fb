@@ -60,12 +60,9 @@
 #     # password: 'please use keys'
 #   }
 
-<<<<<<< HEAD
 # server 'EC2のIPアドレス', user: 'app', roles: %w{app db web}
 # set :ssh_options, keys: '鍵へのpath'
 
-=======
->>>>>>> origin/master
 server '13.113.53.104', user: 'app', roles: %w{app db web}
 #set :ssh_options, keys: '/home/app/.ssh/id_rsa'
 set :ssh_options, keys: '/home/ubuntu/workspace/fb/.ssh/id_rsa'
