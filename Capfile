@@ -16,7 +16,17 @@ require "capistrano/deploy"
 #   https://github.com/capistrano/passenger
 #
 # require 'capistrano/rvm'
-<<<<<<< HEAD
+require 'capistrano/rbenv'
+# require 'capistrano/chruby'
+require 'capistrano/bundler'
+require 'capistrano/rails/assets'
+require 'capistrano/rails/migrations'
+# require 'capistrano/passenger'
+require 'capistrano3/unicorn'
+
+# Load custom tasks from `lib/capistrano/tasks` if you have any defined
+# Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
+
 # require 'capistrano/rbenv'
 # require 'capistrano/chruby'
 # require 'capistrano/bundler'
@@ -35,18 +45,5 @@ require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 require 'capistrano3/unicorn'
 
-=======
-require 'capistrano/rbenv'
-# require 'capistrano/chruby'
-require 'capistrano/bundler'
-require 'capistrano/rails/assets'
-require 'capistrano/rails/migrations'
-# require 'capistrano/passenger'
-require 'capistrano3/unicorn'
-
-# Load custom tasks from `lib/capistrano/tasks` if you have any defined
-# Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
-
->>>>>>> origin/master
 # taskを記述したファイルを読み込むよう設定。　場所と拡張子を指定。
 Dir.glob('lib/capistrano/tasks/*.rb').each { |r| import r }
