@@ -1,26 +1,4 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
-
-  get 'notifications/index'
-
-#  get 'messages/index'
-
-#  get 'messages/create'
-
-#  get 'conversations/index'
-
-#  get 'conversations/create'
-
-  get 'relationships/create'
-
-  get 'relationships/destroy'
-
-#  get 'users/index'
-
-#  get 'comments/create'
-
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-=======
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 #  devise_for :users
 # 以下の1行を削除する
@@ -41,13 +19,31 @@ Rails.application.routes.draw do
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
 
->>>>>>> origin/master
+
+  get 'notifications/index'
+
+#  get 'messages/index'
+
+#  get 'messages/create'
+
+#  get 'conversations/index'
+
+#  get 'conversations/create'
+
+  get 'relationships/create'
+
+  get 'relationships/destroy'
+
+#  get 'users/index'
+
+#  get 'comments/create'
+
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users, controllers: {
     registrations: "users/registrations",
     omniauth_callbacks: "users/omniauth_callbacks"
   }
 
-<<<<<<< HEAD
 #resources :users, only: [:index]
 resources :users, only: [:index, :show]
 
@@ -97,8 +93,7 @@ root 'top#index'
 if Rails.env.development?
   mount LetterOpenerWeb::Engine, at: "/letter_opener"
 end
-=======
->>>>>>> origin/master
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -153,8 +148,4 @@ end
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-<<<<<<< HEAD
 end
-=======
-end
->>>>>>> origin/master
