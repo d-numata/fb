@@ -2,15 +2,6 @@ RailsAdmin.config do |config|
 
   ### Popular gems integration
 
-<<<<<<< HEAD
-  # == Devise ==
-  config.authenticate_with do
-    warden.authenticate! scope: :user
-  end
-  config.current_user_method(&:current_user)
-
-  # == Cancan ==
-=======
   ## == Devise ==
   config.authenticate_with do
    warden.authenticate! scope: :user
@@ -18,7 +9,6 @@ RailsAdmin.config do |config|
   config.current_user_method(&:current_user)
 
   ## == Cancan ==
->>>>>>> origin/master
   config.authorize_with :cancan
 
   ## == Pundit ==
