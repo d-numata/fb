@@ -6,22 +6,15 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-<<<<<<< HEAD
+##  config.secret_key = 'c79121777b52815a80a75e3a4e0d69803a4d7f90a6d66f2d3ef3fbaa6a21cd12ed94e48376f08ecf84c9c81a31e7d6d70b89c2e3275edac5de466a8cd71be44e'
   # config.secret_key = '632639441f09d9d41c958525d5d0c3fee3a99ed63f78ebfd57a96061e60830b28def2b8d75487ba21f96988e5c9b6ec9d4b83a43d0de86eaa29d868e39bf4463'
   config.secret_key = '632639441f09d9d41c958525d5d0c3fee3a99ed63f78ebfd57a96061e60830b28def2b8d75487ba21f96988e5c9b6ec9d4b83a43d0de86eaa29d868e39bf4463'
-=======
-  config.secret_key = 'c79121777b52815a80a75e3a4e0d69803a4d7f90a6d66f2d3ef3fbaa6a21cd12ed94e48376f08ecf84c9c81a31e7d6d70b89c2e3275edac5de466a8cd71be44e'
->>>>>>> origin/master
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-<<<<<<< HEAD
-#  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
-=======
   #config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
->>>>>>> origin/master
   config.mailer_sender = 'noreply@yourdomain'
 
   # Configure the class responsible to send e-mails.
@@ -118,11 +111,8 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-<<<<<<< HEAD
-  # config.pepper = '5db9b081b53239e86b6900bdb7f9ec01089f7d73fe7b2994d7fa1dd900a59baea27ae13b8399c31754fd1d4cdd9e90938da9d0041ac3f2857719c3fc453e20c9'
-=======
   # config.pepper = 'a52d4739d148f566c686dc54cda9e681c5a136bf2ac6cd3ebd96d2a48cf1cb1d47aec6e79de42e31cef288cd79398aa04c5a95bb4a60442d650702863b2294fa'
->>>>>>> origin/master
+  # config.pepper = '5db9b081b53239e86b6900bdb7f9ec01089f7d73fe7b2994d7fa1dd900a59baea27ae13b8399c31754fd1d4cdd9e90938da9d0041ac3f2857719c3fc453e20c9'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -288,11 +278,7 @@ Devise.setup do |config|
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
-<<<<<<< HEAD
   if Rails.env.production?
-=======
-    if Rails.env.production?
->>>>>>> origin/master
 #    config.omniauth :facebook, ENV["FACEBOOK_ID_PRODUCTION"], ENV["FACEBOOK_SECRET_PRODUCTION"], scope: 'email', display: 'popup', info_fields: 'name, email'
     config.omniauth :twitter, ENV["TWITTER_ID_PRODUCTION"], ENV["TWITTER_SECRET_PRODUCTION"], scope: 'email', display: 'popup', info_fields: 'name, email'
   else
