@@ -4,10 +4,8 @@ ja:
       blog: "ブログ"
       contact: "お問い合わせ"
       user: "ユーザー"
-<<<<<<< HEAD
-=======
       tweet: "ツイート"
->>>>>>> origin/master
+
     attributes:
       blog:
         title: "タイトル"
@@ -24,11 +22,7 @@ ja:
         current_password: "現在のパスワード"
         password: "パスワード"
         password_confirmation: "確認用パスワード"
-<<<<<<< HEAD
-        remember_me: "ログインを記憶"
-=======
         remember_me: "ログインを記憶"
       tweet:
         content: "内容"
         image: "画像"
->>>>>>> origin/master
