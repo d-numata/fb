@@ -6,14 +6,11 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-<<<<<<< HEAD
+#module Twit
+#  class Application < Rails::Application
+#    config.autoload_paths += Dir[Rails.root.join('app', 'uploaders')]
 module Achieve
   class Application < Rails::Application
-=======
-module Twit
-  class Application < Rails::Application
-    config.autoload_paths += Dir[Rails.root.join('app', 'uploaders')]
->>>>>>> origin/master
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -25,7 +22,6 @@ module Twit
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-<<<<<<< HEAD
     config.i18n.default_locale = :ja
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
@@ -34,16 +30,3 @@ module Twit
     config.action_view.field_error_proc = proc { |html_tag, instance| html_tag }
   end
 end
-=======
-
-    # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
-
-    config.action_view.field_error_proc = proc { |html_tag, instance| html_tag }
-    
-    # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    config.i18n.default_locale = :ja
-  end
-end
->>>>>>> origin/master
