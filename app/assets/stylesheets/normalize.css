@@ -219,23 +219,14 @@ audio:not([controls]) {
 
 img {
   border-style: none;
-<<<<<<< HEAD
   max-width: 100%;
-=======
->>>>>>> origin/master
 }
 
 /**
  * Hide the overflow in IE.
  */
 
-<<<<<<< HEAD
-=======
-img{
-  max-width: 100%;
-}
 
->>>>>>> origin/master
 svg:not(:root) {
   overflow: hidden;
 }

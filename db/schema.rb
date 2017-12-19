@@ -11,26 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20171127053040) do
-=======
-ActiveRecord::Schema.define(version: 20171107063627) do
->>>>>>> origin/master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
   create_table "blogs", force: :cascade do |t|
     t.string   "title"
-=======
-  create_table "tweets", force: :cascade do |t|
->>>>>>> origin/master
     t.text     "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
-<<<<<<< HEAD
   end
 
   create_table "comments", force: :cascade do |t|
@@ -93,11 +84,6 @@ ActiveRecord::Schema.define(version: 20171107063627) do
   add_index "relationships", ["follower_id", "followed_id"], name: "index_relationships_on_follower_id_and_followed_id", unique: true, using: :btree
   add_index "relationships", ["follower_id"], name: "index_relationships_on_follower_id", using: :btree
 
-=======
-    t.string   "image"
-  end
-
->>>>>>> origin/master
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
     t.string   "encrypted_password",     default: "",    null: false
@@ -117,18 +103,10 @@ ActiveRecord::Schema.define(version: 20171107063627) do
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
     t.boolean  "admin",                  default: false
-<<<<<<< HEAD
     t.string   "avatar"
     t.string   "uid",                    default: "",    null: false
     t.string   "provider",               default: "",    null: false
     t.string   "image_url"
-=======
-    t.string   "uid",                    default: "",    null: false
-    t.string   "provider",               default: "",    null: false
-    t.string   "image_url"
-    t.string   "avatar"
-    t.string   "picture"
->>>>>>> origin/master
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
@@ -136,13 +114,10 @@ ActiveRecord::Schema.define(version: 20171107063627) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   add_index "users", ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true, using: :btree
 
-<<<<<<< HEAD
   add_foreign_key "comments", "blogs"
   add_foreign_key "comments", "users"
   add_foreign_key "messages", "conversations"
   add_foreign_key "messages", "users"
   add_foreign_key "notifications", "comments"
   add_foreign_key "notifications", "users"
-=======
->>>>>>> origin/master
 end
