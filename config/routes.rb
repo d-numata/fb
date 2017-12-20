@@ -15,9 +15,9 @@ Rails.application.routes.draw do
 
 #  get 'tweets' => 'tweets#index' #<<<<<この行を追加する
 
-  if Rails.env.development?
-    mount LetterOpenerWeb::Engine, at: "/letter_opener"
-  end
+#  if Rails.env.development?
+#    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+#  end
 
 
   get 'notifications/index'
