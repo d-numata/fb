@@ -88,7 +88,6 @@ resources :poems, only: [:index, :show] #この行を追記する
 #    post :confirm
 #  end
 #end
-root 'top#index'
 
 if Rails.env.development?
   mount LetterOpenerWeb::Engine, at: "/letter_opener"
