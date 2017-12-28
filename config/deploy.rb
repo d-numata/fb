@@ -10,7 +10,8 @@ set :repo_url, 'https://github.com/d-numata/achieve.git'
 set :branch, ENV['BRANCH'] || 'master'
 
 # deploy先のディレクトリ。
-set :deploy_to, '/var/www/achieve'
+#set :deploy_to, '/var/www/achieve'
+set :deploy_to, '/var/www/fb'
 
 # シンボリックリンクをはるフォルダ・ファイル
 set :linked_files, %w{.env config/secrets.yml}
