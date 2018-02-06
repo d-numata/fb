@@ -84,6 +84,14 @@ ActiveRecord::Schema.define(version: 20171127053040) do
   add_index "relationships", ["follower_id", "followed_id"], name: "index_relationships_on_follower_id_and_followed_id", unique: true, using: :btree
   add_index "relationships", ["follower_id"], name: "index_relationships_on_follower_id", using: :btree
 
+  create_table "tweets", force: :cascade do |t|
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.string   "image"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
     t.string   "encrypted_password",     default: "",    null: false
@@ -107,6 +115,7 @@ ActiveRecord::Schema.define(version: 20171127053040) do
     t.string   "uid",                    default: "",    null: false
     t.string   "provider",               default: "",    null: false
     t.string   "image_url"
+    t.string   "picture"
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
