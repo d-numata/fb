@@ -1,10 +1,12 @@
 lock '3.6.0'
 
 # デプロイするアプリケーション名
-set :application, 'achieve'
+#set :application, 'achieve'
+set :application, 'fb'
 
 # cloneするgitのレポジトリ（xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
-set :repo_url, 'https://github.com/d-numata/achieve.git'
+#set :repo_url, 'https://github.com/d-numata/achieve.git'
+set :repo_url, 'https://github.com/d-numata/fb.git'
 
 # deployするブランチ。デフォルトはmasterなのでなくても可。
 set :branch, ENV['BRANCH'] || 'master'
