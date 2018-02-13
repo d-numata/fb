@@ -11,14 +11,11 @@
 // about supported directives.
 //
 //= require jquery
-<<<<<<< HEAD
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
-=======
 //= require turbolinks
 //= require jquery_ujs
 //= require twitter/bootstrap
->>>>>>> origin/master
 //= require_tree .
