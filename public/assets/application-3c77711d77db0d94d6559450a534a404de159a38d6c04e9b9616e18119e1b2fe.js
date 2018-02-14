@@ -11020,15 +11020,9 @@ return jQuery;
 // about supported directives.
 //
 
-<<<<<<< HEAD
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
-=======
-//= require turbolinks
-//= require jquery_ujs
-//= require twitter/bootstrap
->>>>>>> origin/master
 //= require_tree .
 ;
